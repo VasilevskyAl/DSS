@@ -6,6 +6,17 @@ on:
     pull_request:
         branches: [main]
     
-
+jobs:
+  testing_actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo code
+        uses: actions/checkout@v3
+      - name: Setup python env
+        uses: actions/setup-python@v2
+        with:
+            python-version: '3.x'
+      - name: Installing dependencies
+	    run: ls ${{ github.workspace }}
       
       
