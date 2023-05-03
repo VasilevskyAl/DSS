@@ -19,6 +19,5 @@ jobs:
       - name: Installing dependencies
         run: |
             python -m pip install --upgrade pip
-      - name: List files in the repository
-	  run: |
+	    run: |
             ls ${{ github.workspace }}
