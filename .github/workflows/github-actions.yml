@@ -6,11 +6,6 @@ on:
     pull_request:
         branches: [main]
     
-jobs:
-  testing_actions:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repo code
-        uses: actions/checkout@v3
+
       
       
