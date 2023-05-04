@@ -1,8 +1,8 @@
-name: testing
-run-name: ${{ github.actor }} is testing out GitHub Actions
+name: unit-test-linter
+run-name: ${{ github.actor }} runs linter and unit tests
 on: [push]
 jobs:
-  testing:
+  unit-test-linter:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
